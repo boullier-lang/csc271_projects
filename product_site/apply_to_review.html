@@ -1,0 +1,67 @@
+<!--
+Name: Mathew Boullier
+Date: 9/21/25
+Description: This is a rough draft for the home page for my site.
+ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head> 
+		<title> TrueTake </title>
+		<meta charset="UTF-8">
+	</head>
+	
+	<!-- Make a more interesting background color (CHOCOLATE!!!) -->
+	<body style="background-color:Chocolate;">
+		
+		<!-- This creates the 'top navigation bar' -->
+		<h1>
+			<a href="home_page.html">
+			<img src="images/logo.png" alt="TrueTake Home" width="128" height="128"> </a>  
+			&emsp;&emsp;&emsp; 
+			<a href="about_page.html"> About </a>
+			&emsp;&emsp;&emsp; 
+			Movies 
+			&emsp;&emsp;&emsp; 
+			Shows 
+			&emsp;&emsp;&emsp; 
+			Video Games 
+			&emsp;&emsp;&emsp; 
+			[Search]
+			
+		</h1>
+	
+		<hr>
+		<h2> <center> Applying to be a Reviewer </center></h2>
+		
+		
+		<br><br><br>
+		<p> Before applying, remember to read the rules for reviewers, and ensure that you can uphold these rules. The rules can be found <a href="about_page.html"> here </a>. </p>
+		<form action="thanks_for_applying.html">
+			<label for="title"> <strong> Your User Handle </strong> </label>
+			<input type="text" name="text" maxlength="55">
+			<br>
+			<label for="title"> <strong> Your Email </strong> </label>
+			<input type="email" name="text" maxlength="55">
+			<br>
+			<strong> Review Preferences </strong> <br>
+			<input type="checkbox" id="movies" name="movies" value="movies">
+			<label for="option_1"> Movies</label><br>
+			<input type="checkbox" id="shows" name="shows" value="shows">
+			<label for="option_2"> TV Shows</label><br>
+			<input type="checkbox" id="games" name="games" value="games">
+			<label for="option_3"> Video Games </label>
+			<br> 
+			<label for="title"> <strong> Why do you want to become a reviewer? </strong> </label><br>
+			<textarea type="text" name="text" maxlength="55"></textarea>
+			<br>
+			<label for="title"> <strong> How active do you see yourself being? </strong> </label><br>
+			<input type="radio" name="activity" value="Hardly"> Only on new releases </input><br>
+			<input type="radio" name="activity" value="Sometimes"> When I watch or play something I haven't before </input><br>
+			<input type="radio" name="activity" value="Active"> Actively reviewing things I have seen or played before </input>
+			<br><br>
+			<button> Submit </button>
+		</form>
+		
+</html>
