@@ -39,27 +39,30 @@ Description: This is a rough draft for the home page for my site.
 		<br><br><br>
 		<p> Before applying, remember to read the rules for reviewers, and ensure that you can uphold these rules. The rules can be found <a href="about_page.html"> here </a>. </p>
 		<form action="thanks_for_applying.html">
-			<label="title"> <strong> Your User Handle </strong> </label>
-			<input type="text" name="text" maxlength="55">
+			<label for="user_handle"><strong> Your User Handle </strong></label>
+			<input type="text" id="user_handle" name="user_handle" maxlength="55">
 			<br>
-			<label="title"> <strong> Your Email </strong> </label>
-			<input type="email" name="text" maxlength="55">
+			<label for="email"><strong> Your Email </strong></label>
+			<input type="email" id="email" name="email" maxlength="55">
 			<br>
 			<strong> Review Preferences </strong> <br>
-			<input type="checkbox" id="movies" name="movies" value="movies">
-			<label="option_1"> Movies</label><br>
-			<input type="checkbox" id="shows" name="shows" value="shows">
-			<label="option_2"> TV Shows</label><br>
-			<input type="checkbox" id="games" name="games" value="games">
-			<label="option_3"> Video Games </label>
+			<input type="checkbox" id="movies" name="preferences" value="movies">
+			<label for="movies"> Movies</label><br>
+			<input type="checkbox" id="shows" name="preferences" value="shows">
+			<label for="shows"> TV Shows</label><br>
+			<input type="checkbox" id="games" name="preferences" value="games">
+			<label for="games"> Video Games </label>
 			<br> 
-			<label="title"> <strong> Why do you want to become a reviewer? </strong> </label><br>
-			<textarea maxlength="55"></textarea>
+			<label for="reason"><strong> Why do you want to become a reviewer? </strong></label><br>
+			<textarea id="reason" name="reason" maxlength="55"></textarea>
 			<br>
-			<label="title"> <strong> How active do you see yourself being? </strong> </label><br>
-			<input type="radio" name="activity" value="Hardly"> Only on new releases <br>
-			<input type="radio" name="activity" value="Sometimes"> When I watch or play something I haven't before<br>
-			<input type="radio" name="activity" value="Active"> Actively reviewing things I have seen or played before
+			<label><strong> How active do you see yourself being? </strong></label><br>
+			<input type="radio" id="hardly" name="activity" value="Hardly">
+			<label for="hardly"> Only on new releases </label><br>
+			<input type="radio" id="sometimes" name="activity" value="Sometimes">
+			<label for="sometimes"> When I watch or play something I haven't before</label><br>
+			<input type="radio" id="active" name="activity" value="Active">
+			<label for="active"> Actively reviewing things I have seen or played before</label>
 			<br><br>
 			<button> Submit </button>
 		</form>
