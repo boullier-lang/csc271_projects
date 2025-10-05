@@ -1,0 +1,44 @@
+body{
+	/*This gradient was made with help from an online resource that I found! :)*/
+	/*link: https://cssgradient.io/ */
+	background: #f0a53c;
+	background: linear-gradient(90deg, rgba(240, 165, 60, 1) 0%, rgba(181, 36, 16, 1) 50%, rgba(231, 245, 34, 1) 100%);
+}
+
+.center{
+	text-align:center;
+}
+
+hr{
+	border-color:#1C1818
+}
+
+a{
+	text-decoration:none;
+}
+
+a:visited{
+    color: #220061;
+	text-decoration:none;
+}
+a:hover{
+	color: #4AE8DA;
+	text-decoration:none;
+}
+
+.grid_guy{
+	display:grid;
+	background-color: invisible;
+	grid-template-columns:auto auto auto auto;
+	padding: 5px;
+	margin: 0 auto; /* centers the block element */
+	width: fit-content; /* shrink-wrap to content size */
+}
+
+/*The dividers inside our "grid_guy" class*/
+.grid_guy > div{
+	background-color:invisible;
+	padding:10px;
+	text-align:center;
+	text-decoration:strong;
+}
