@@ -44,8 +44,6 @@ a:hover{
 
 /*The dividers inside our "grid_guy" class*/
 .grid_guy > div{
-	background-color:invisible;
 	padding:10px;
 	text-align:center;
-	text-decoration:strong;
 }
