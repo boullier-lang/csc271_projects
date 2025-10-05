@@ -35,7 +35,6 @@ a:hover{
 
 .grid_guy{
 	display:grid;
-	background-color: invisible;
 	grid-template-columns:auto auto auto auto;
 	padding: 5px;
 	margin: 0 auto; /* centers the block element */
