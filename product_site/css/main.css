@@ -1,8 +1,15 @@
+/*
+Mathew Boullier
+10/4/25
+Simple stylesheet.
+*/
+
 body{
 	/*This gradient was made with help from an online resource that I found! :)*/
 	/*link: https://cssgradient.io/ */
 	background: #f0a53c;
 	background: linear-gradient(90deg, rgba(240, 165, 60, 1) 0%, rgba(181, 36, 16, 1) 50%, rgba(231, 245, 34, 1) 100%);
+	font-family: Verdana, Arial;
 }
 
 .center{
