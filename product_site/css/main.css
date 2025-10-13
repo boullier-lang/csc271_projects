@@ -13,8 +13,14 @@ body{
 }
 
 .center{
-	text-align:center;
+	  text-align: center;
 }
+.center-img {
+  display: block;       /* makes the image a block element */
+  margin: 0 auto;       /* centers block horizontally */
+  float: none;          /* removes any floating */
+}
+
 
 hr{
 	border-color:#1C1818
@@ -33,6 +39,11 @@ a:hover{
 	text-decoration:none;
 }
 
+/*Color the active link differnetly*/
+a.active{
+	color: #CD7F32;
+}
+
 .grid_guy{
 	display:grid;
 	grid-template-columns:auto auto auto auto;
@@ -45,4 +56,70 @@ a:hover{
 .grid_guy > div{
 	padding:10px;
 	text-align:center;
+}
+
+/* Header */
+.header{
+	overflow:hidden;
+	padding:5px;
+	margin:2px;
+	background-color:rgba(255, 0, 0, 0.2);
+}
+
+.header_2{
+	padding:50px;
+	float:right;
+	margin-top:15px;
+	display:flex;
+	gap:40px;
+	align-items:center;
+	font-size:24px;
+}
+
+/*I tried to make floating work, but it wouldn't line up that well! I decided to use a flexbox instead.*/
+.main_content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Each column takes equal space */
+.left_content,
+.right_content {
+  flex: 1;
+  border-right: 2px solid black;
+}
+
+
+img{
+  max-width:100%;
+  margin:10px;
+  padding:25px;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.header_2{
+		float:none;
+		gap:10px;
+		align-items:flex-start;
+	}
+	
+  .main_content {
+    flex-direction: column;  /* stack vertically */
+  }
+
+  .left_content,
+  .right_content {
+    width: 100%;             
+    margin-bottom: 20px;   
+	border-right:none;
+  }
+  
+  img{
+	  float:none;
+	  width:100%;
+	  margin:30px;
+  }
 }
