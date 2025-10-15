@@ -79,7 +79,8 @@ a.active{
 /*I tried to make floating work, but it wouldn't line up that well! I decided to use a flexbox instead.*/
 .main_content {
   display: flex;
-  gap: 20px;
+  box-sizing:display-block;
+  gap: 10px;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -88,18 +89,19 @@ a.active{
 .left_content,
 .right_content {
   flex: 1;
-  border-right: 2px solid black;
+}
+
+.left_content{
+	border-right: 2px solid black;
 }
 
 
 img{
   max-width:100%;
-  margin:10px;
-  padding:25px;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
 	.header_2{
 		float:none;
 		gap:10px;
@@ -107,7 +109,10 @@ img{
 	}
 	
   .main_content {
-    flex-direction: column;  /* stack vertically */
+      flex-direction: column !important;   /* force stacking */
+      flex-wrap: wrap !important;
+      align-items: stretch;
+	  
   }
 
   .left_content,
@@ -118,8 +123,9 @@ img{
   }
   
   img{
-	  float:none;
-	  width:100%;
-	  margin:30px;
+      width: 100% !important;
+      float: none !important;
+      margin: 0 !important;
+	  height:auto;
   }
 }
