@@ -83,6 +83,7 @@ a.active{
   gap: 10px;
   justify-content: space-between;
   align-items: flex-start;
+  margin:5px;
 }
 
 /* Each column takes equal space */
@@ -109,8 +110,8 @@ img{
 	}
 	
   .main_content {
-      flex-direction: column !important;   /* force stacking */
-      flex-wrap: wrap !important;
+      flex-direction: column;  /* force stacking */
+      flex-wrap: wrap;
       align-items: stretch;
 	  
   }
@@ -123,9 +124,8 @@ img{
   }
   
   img{
-      width: 100% !important;
-      float: none !important;
-      margin: 0 !important;
-	  height:auto;
+      width: 100%;
+      float: none;
+      margin: 0;
   }
 }
