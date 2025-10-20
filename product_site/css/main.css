@@ -93,7 +93,7 @@ h1, h2, h3 {
 /*I tried to make floating work, but it wouldn't line up that well! I decided to use a flexbox instead.*/
 .main_content {
   display: flex;
-  box-sizing:border-block;
+  box-sizing:border-box;
   gap: 10px;
   justify-content: space-between;
   align-items: flex-start;
@@ -114,6 +114,7 @@ h1, h2, h3 {
 img{
   max-width:100%;
   margin:2px;
+  height:auto;
 }
 
 @media only screen and (max-width: 750px) {
