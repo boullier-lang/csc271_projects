@@ -1,0 +1,26 @@
+A.
+
+
+1. Both of my peers understood the purpose of my website without me needing to tell them.
+2. Neither of my peers suggested any improvements to messaging/content.
+
+
+B.
+3. Both of my peers said that in terms of layout, my site is very strong. They did suggest to add some more contrast.
+4. It seems like they did find my overall design very effective! Beyond some contrast issues, they seemed to really like my site :)
+
+
+C.
+
+5. In terms of interactivity, my peers found that some of the images stretch a lot when you compress the screen. They also found that instead of stacking, some pages would stretch out beyond the size of the screen.
+6. They did note that images loaded slowly.
+
+D.
+7. In terms of accessibility, the only notes I got were in terms of some contrast issues, and captions not being automatically enabled for my YouTube video.
+
+8.I can improve accessibility by automatically enabling captions for Videos, and fixing some of the contrast issues.
+
+E.
+9. The thing my peers liked most about my site was definitely the background. They both complimented it and said that it was very eye-catching because it is a gradient. They also liked the logo.
+
+10. I will improve contrast, add two more genre pages, fix some interactivity, fix load times, and add YouTube captions automatically turning on for the iframe. To  fix contrast, I will change the color of the header, as it didn't stand out too much. I will then fix the hyperlink navigations so that their color stands out. I will also add different colors for each of the headers across all my pages. To improve readability for the links in the future, I will also add a text-shadow to all hyperlinks, making it easier to read on bright backgrounds. For the iframe video, I will simply add the option to enable captions to be turned on. The genre page will be easy to implement, as they are almost identical to the movie one. For interactivity, will fix the logo stretching, and ensure that images float and grids change sizes based on the screen size. For load times being slow, I will compress all images so that they take less time to load, and try to make sure that most (if not all) are in .jpeg format, since jpeg is one of the more efficient file formats for images.

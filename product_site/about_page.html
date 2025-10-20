@@ -9,11 +9,30 @@ Description: This is a rough draft for the about page for my site.
 
 <html lang="en">
 	<head> 
-		<title> TrueTake </title>
+		<title> TrueTake | About </title>
 		<!--Link our stylesheets-->
 		<link href="css/main.css" type="text/css" rel="stylesheet">
 		<link href="css/about.css" type="text/css" rel="stylesheet">
 		<meta charset="UTF-8">
+		
+		<meta name="description" content="Learn about TrueTake, your go-to site for reviews on movies, TV shows, and video games.">
+
+
+		<meta property="og:title" content="About TrueTake">
+		<meta property="og:description" content="Discover TrueTake: honest reviews on movies, TV shows, and video games.">
+		<meta property="og:image" content="images/logo.png">
+		<meta property="og:url" content="https://mathewboullier.rhody.dev/product_site/about_page.html">
+		<meta property="og:type" content="website"
+		
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0VNHKGHFS"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-J0VNHKGHFS');
+		</script>
 	</head>
 	
 	<!-- Make a more interesting background color (CHOCOLATE!!!) -->
@@ -26,8 +45,8 @@ Description: This is a rough draft for the about page for my site.
 			<div class="header_2">
 				<a href="about_page.html" class="active"> About </a>
 				<a href="movie_genre_page.html"> Movies </a>
-				<a href="#"> Shows </a> 
-				<a href="#">  Video Games </a>
+				<a href="show_genre_page.html"> Shows </a> 
+				<a href="game_genre_page.html">  Video Games </a>
 				<a href="#"> [Search] </a>
 			</div>
 		</div>
@@ -52,7 +71,7 @@ Description: This is a rough draft for the about page for my site.
 					
 				</p>
 					<!-- Our iframe video! -->
-					<iframe src="https://youtube.com/embed/umHCpLzGVIk" height="250" width="500" class="about_img"> </iframe>
+					<iframe src="https://www.youtube.com/embed/umHCpLzGVIk?cc_load_policy=1&cc_lang_pref=en" height="250" width="500" class="about_img" title="critic problems"> </iframe>
 					
 					<br><br>
 				<p>
