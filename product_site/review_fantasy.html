@@ -1,0 +1,158 @@
+<!--
+Name: Mathew Boullier
+Date: 9/21/25
+Description: This is a rough draft for the home page for my site.
+ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head> 
+		<title> TrueTake </title>
+		<!--Link our stylesheets-->
+		<link href="css/main.css" type="text/css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0VNHKGHFS"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-J0VNHKGHFS');
+		</script>
+	</head>
+	
+	<!-- Make a more interesting background color (CHOCOLATE!!!) -->
+	<body>
+		
+		<!-- This creates the 'top navigation bar' -->
+		<div class="header">
+			<a href="home_page.html"> <img src="images/logo.png" alt="TrueTake Home" width="128" height="128"> </a>  
+		
+			<div class="header_2">
+				<a href="about_page.html"> About </a>
+				<a href="movie_genre_page.html"> Movies </a>
+				<a href="show_genre_page.html"> Shows </a> 
+				<a href="game_genre_page.html">  Video Games </a>
+				<a href="#"> [Search] </a>
+			</div>
+		</div>
+	
+		<div id="page_content">
+			<img src="images/warcraft_poster.jpg" height="600" width="300" class="center-img" alt="Game: World of Warcaft Cover"> </img>
+			<br>
+			<h2 class="center"> <strong> World of Warcraft </strong> </h2>
+			<p> <strong> <em> World of Warcraft (WoW) </strong> </em> is a massively multiplayer online role-playing game (MMORPG) developed by Blizzard Entertainment. 
+			Set in the rich fantasy universe of Azeroth, the game allows players to create characters from different races and classes, explore vast worlds, 
+			complete quests, battle monsters, and interact with millions of other players in real time. Since its release in 2004, World of Warcraft has become 
+			one of the most influential and popular online games in history, known for its immersive storytelling, expansive world-building, and vibrant community. 
+			Players can join alliances, engage in epic raids, or compete in player-versus-player battles, all while uncovering the ever-evolving lore of the Warcraft universe.
+			</p>
+			<hr>
+			<h2 class="center"> Reviews </h2>
+			<br>
+			<h3 class="center"> <strong> Average Rating: </strong> 7/10 </h3>
+			
+			<div class="main_content">
+			
+				<div class="right_content">
+				
+				<img id="your_review_pic" src="" alt=""> </img>
+				<p id="your_review"> </p>
+				
+				
+				
+				<img src="images/logo.png" alt="user_A_picture"> </img> 
+					<p> <strong> UserA (8/10) [MMO Lover, RPG Lover, Longtime Fan] </strong><br> As a lifelong World of Warcraft fan, I can confidently say the game still holds a special kind of magic even after all these years. 
+					The world of Azeroth remains one of the most immersive and detailed fantasy settings ever created, and few games can match the sense of adventure and community WoW delivers. 
+					That said, it’s not without its flaws — the grind can feel repetitive at times, and some recent expansions haven’t quite captured the same spark as the early days. Still, 
+					the mix of nostalgia, constant evolution, and rich storytelling keeps me coming back. After two decades, WoW earns a solid 8/10 — not perfect, but still one of the best journeys a gamer can take.
+					</p>
+					
+					<br>
+					
+					<img src="images/logo.png"alt="user_B_picture"> </img>
+					<p> <strong> UserB (6/10) [MMO Lover, RPG Lover, New Fan] </strong><br> As a newer World of Warcraft player, I can see why this game has such a legendary reputation — the world is huge, the lore is deep, and there’s a real sense of history 
+					behind everything you do. However, coming in fresh in 2025 can feel overwhelming. The leveling process, while improved, still feels dated compared to modern MMOs, and the user interface and systems can be 
+					pretty clunky for newcomers. There’s definitely fun to be had — dungeons, raids, and exploring Azeroth with friends are still awesome experiences — but it takes patience to get there. Overall, I’d give 
+					World of Warcraft a 6/10: impressive and nostalgic, but not always friendly to new players.
+					</p>
+				</div>
+				
+				<div class="left_content">
+					<form id="ratingForm" aria-labelledby="ratingTitle" autocomplete="off">
+						<h2 id="ratingTitle">Leave a Rating & Review</h2>
+
+						<div>
+						  <label for="score">Score (1–10)</label>
+						  
+						  <select id="score" name="score" required>
+							<option value="" disabled selected>Select a score</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						  </select>
+						</div>
+						<br>
+						<div>
+						  <label for="review">Your review</label> <br>
+						  <textarea id="review" name="review" rows="6" cols="40" placeholder="Write your review..." required></textarea>
+						</div>
+
+						<div>
+						  <label>Your gaming background (select all that apply):</label>
+						  <div>
+							<input type="checkbox" id="new_player" name="background" value="New Fan">
+							<label for="new_player">New to WoW</label>
+						  </div>
+						  <div>
+							<input type="checkbox" id="old_player" name="background" value="Longtime Fan">
+							<label for="new_player">Veteran to WoW</label>
+						  </div>
+						  <div>
+							<input type="checkbox" id="casual_gamer" name="background" value="Casual">
+							<label for="casual_gamer">Casual gamer</label>
+						  </div>
+						  <div>
+							<input type="checkbox" id="mmo_fan" name="background" value="MMO Lover">
+							<label for="mmo_fan">I love MMOs</label>
+						  </div>
+						  <div>
+							<input type="checkbox" id="fantasy_fan" name="background" value="RPG Lover">
+							<label for="fantasy_fan">I enjoy RPG games</label>
+						  </div>
+						  <div>
+							<input type="checkbox" id="hardcore_gamer" name="background" value="Hardcore">
+							<label for="hardcore_gamer">Hardcore gamer</label>
+						  </div>
+						</div>
+
+
+						<div>
+						  <button type="button" id="submitReview" aria-describedby="submitHelp" onclick="submit_review()">
+							Submit Review
+						  </button>
+						</div>
+					  </form>
+				
+				</div>
+			
+			</div>
+			
+		</div>
+		
+		
+		
+		<script src="js/review.js" defer></script>
+		</body>
+</html>

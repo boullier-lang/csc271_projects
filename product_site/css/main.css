@@ -17,7 +17,9 @@ body{
 }
 .center-img {
   display: block;       /* makes the image a block element */
-  margin: 0 auto;       /* centers block horizontally */
+  margin: 0 auto;  
+  
+  width:auto
   float: none;          /* removes any floating */
 }
 
