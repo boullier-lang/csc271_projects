@@ -102,6 +102,14 @@ h1, h2, h3 {
   margin:5px;
 }
 
+.inline_content {
+  display: inline-flex;        /* ✅ keeps container only as wide as content */
+  align-items: center;         
+  justify-content: center;     
+  gap: 8px;                    /* small, consistent spacing */
+  margin: 0 auto;              /* centers the whole block */
+}
+
 /* Each column takes equal space */
 .left_content,
 .right_content {
@@ -118,6 +126,22 @@ img{
   margin:2px;
   height:auto;
 }
+
+
+button {
+padding: 10px 20px;
+border: none;
+background-color: #5b2cff;
+color: white;
+border-radius: 8px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #4418cc;
+}
+
+
 
 @media only screen and (max-width: 750px) {
 	.header img{
@@ -155,4 +179,6 @@ img{
 	  grid-template-columns:repeat(2,1fr);
 	  width: 100%;
   }
+
+
 }

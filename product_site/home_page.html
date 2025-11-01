@@ -62,8 +62,16 @@ Description: This is a rough draft for the home page for my site.
 				<h2 class="center"> 
 					&emsp;&emsp; <em>Discover</em>&emsp;&emsp; 
 				</h2>
-				
-				<img class="center-img" src="images/Weapons_Poster.png" alt="Movie: 'Weapons' Cover" height="215" width="175">
+				<div class="center">
+					<div class="inline_content">
+						<button id="left-btn" onclick="handle_click('left')"> <== </button>
+						<a id="discover-link" href="">
+							<img id="discover-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Weapons_film_2025.jpeg" alt="Movie: 'Weapons' Cover" height="215" width="175">
+						</a>
+						<button id="right-btn" onclick="handle_click('right')"> ==> </button>
+					</div>
+				</div>
+
 			</div>
 			
 			<div class="right_content">
@@ -76,30 +84,30 @@ Description: This is a rough draft for the home page for my site.
 					</tr>
 					
 					<tr>
-						<td> <em> World of Warcraft </em> </td>
+						<td> <em> Weapons </em> </td>
 						<td> 7 / 10 </td>
-						<td> <a href="review_fantasy.html"> Read the reviews! </a> </td>
+						<td> Read the Reviews! </td>
 					</tr>
 					
 					<tr>
-						<td> <em> The Shawshank Redemption </em> </td>
+						<td> <em> Hollow Knight: Silksong </em> </td>
 						<td> 9.5 / 10 </td>
-						<td> link! </td>
+						<td> Read the Reviews! </td>
 					</tr>
 					<tr>
 						<td> <em> Superman (2025) </em> </td>
 						<td> 8 / 10 </td>
-						<td> link! </td>			
+						<td> Read the Reviews! </td>			
 					</tr>
 					<tr>
-						<td> <em> Elden Ring </em> </td>
-						<td> 9 / 10 </td>
-						<td> link! </td>
+						<td> <em> Clair Obscur </em> </td>
+						<td> 10 / 10 </td>
+						<td> Read the Reviews! </td>
 					</tr>
 					<tr>
-						<td> <em> Final Fantasy VII: Part I </em> </td>
+						<td> <em> It: Welcome To Derry </em> </td>
 						<td> 8.5 / 10 </td>
-						<td> link! </td>
+						<td> Read the Reviews! </td>
 					</tr>
 				
 				</table>
@@ -139,7 +147,7 @@ Description: This is a rough draft for the home page for my site.
 				<a href="mailto:mathew_boullier@uri.edu"> Get In Contact </a>
 			</p>
 		
-		
+		<script src="js/home.js" defer></script>
 	</body>
 
 </html>

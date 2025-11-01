@@ -10,7 +10,7 @@ Description: This is a rough draft for the home page for my site.
 	<head> 
 		<title> TrueTake </title>
 		<!--Link our stylesheets-->
-		<link href="css/main.css" type="text/css" rel="stylesheet">
+		<link href="../css/main.css" type="text/css" rel="stylesheet">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -30,19 +30,19 @@ Description: This is a rough draft for the home page for my site.
 		
 		<!-- This creates the 'top navigation bar' -->
 		<div class="header">
-			<a href="home_page.html"> <img src="images/logo.png" alt="TrueTake Home" width="128" height="128"> </a>  
+			<a href="../home_page.html"> <img src="../images/logo.png" alt="TrueTake Home" width="128" height="128"> </a>  
 		
 			<div class="header_2">
-				<a href="about_page.html"> About </a>
-				<a href="movie_genre_page.html"> Movies </a>
-				<a href="show_genre_page.html"> Shows </a> 
-				<a href="game_genre_page.html">  Video Games </a>
+				<a href="../about_page.html"> About </a>
+				<a href="../movie_genre_page.html"> Movies </a>
+				<a href="../show_genre_page.html"> Shows </a> 
+				<a href="../game_genre_page.html">  Video Games </a>
 				<a href="#"> [Search] </a>
 			</div>
 		</div>
 	
 		<div id="page_content">
-			<img src="images/warcraft_poster.jpg" height="600" width="300" class="center-img" alt="Game: World of Warcaft Cover"> </img>
+			<img src="../images/warcraft_poster.jpg" height="600" width="300" class="center-img" alt="Game: World of Warcaft Cover"> </img>
 			<br>
 			<h2 class="center"> <strong> World of Warcraft </strong> </h2>
 			<p> <strong> <em> World of Warcraft (WoW) </strong> </em> is a massively multiplayer online role-playing game (MMORPG) developed by Blizzard Entertainment. 
@@ -65,7 +65,7 @@ Description: This is a rough draft for the home page for my site.
 				
 				
 				
-				<img src="images/logo.png" alt="user_A_picture"> </img> 
+				<img src="../images/logo.png" alt="user_A_picture"> </img> 
 					<p> <strong> UserA (8/10) [MMO Lover, RPG Lover, Longtime Fan] </strong><br> As a lifelong World of Warcraft fan, I can confidently say the game still holds a special kind of magic even after all these years. 
 					The world of Azeroth remains one of the most immersive and detailed fantasy settings ever created, and few games can match the sense of adventure and community WoW delivers. 
 					That said, it’s not without its flaws — the grind can feel repetitive at times, and some recent expansions haven’t quite captured the same spark as the early days. Still, 
@@ -74,7 +74,7 @@ Description: This is a rough draft for the home page for my site.
 					
 					<br>
 					
-					<img src="images/logo.png"alt="user_B_picture"> </img>
+					<img src="../images/logo.png"alt="user_B_picture"> </img>
 					<p> <strong> UserB (6/10) [MMO Lover, RPG Lover, New Fan] </strong><br> As a newer World of Warcraft player, I can see why this game has such a legendary reputation — the world is huge, the lore is deep, and there’s a real sense of history 
 					behind everything you do. However, coming in fresh in 2025 can feel overwhelming. The leveling process, while improved, still feels dated compared to modern MMOs, and the user interface and systems can be 
 					pretty clunky for newcomers. There’s definitely fun to be had — dungeons, raids, and exploring Azeroth with friends are still awesome experiences — but it takes patience to get there. Overall, I’d give 
@@ -139,7 +139,7 @@ Description: This is a rough draft for the home page for my site.
 
 
 						<div>
-						  <button type="button" id="submitReview" aria-describedby="submitHelp" onclick="submit_review()">
+						  <button type="button" id="submitReview" onclick="submit_review()"" onclick="submit_review()">
 							Submit Review
 						  </button>
 						</div>
@@ -153,6 +153,6 @@ Description: This is a rough draft for the home page for my site.
 		
 		
 		
-		<script src="js/review.js" defer></script>
+		<script src="../js/review.js" defer></script>
 		</body>
 </html>

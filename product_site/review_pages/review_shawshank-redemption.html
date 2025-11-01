@@ -1,0 +1,184 @@
+<!--
+Name: Mathew Boullier
+Date: 9/21/25
+Description: This is a rough draft for the home page for my site.
+ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head> 
+		<title> TrueTake </title>
+		<!--Link our stylesheets-->
+		<link href="../css/main.css" type="text/css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0VNHKGHFS"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-J0VNHKGHFS');
+		</script>
+	</head>
+	
+	<!-- Make a more interesting background color (CHOCOLATE!!!) -->
+	<body>
+		
+		<!-- This creates the 'top navigation bar' -->
+		<div class="header">
+			<a href="../home_page.html"> <img src="../images/logo.png" alt="TrueTake Home" width="128" height="128"> </a>  
+		
+			<div class="header_2">
+				<a href="../about_page.html"> About </a>
+				<a href="../movie_genre_page.html"> Movies </a>
+				<a href="../show_genre_page.html"> Shows </a> 
+				<a href="../game_genre_page.html">  Video Games </a>
+				<a href="#"> [Search] </a>
+			</div>
+		</div>
+	
+		<div id="page_content">
+			<img src="https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg" height="600" width="300" class="center-img" alt="Game: World of Warcaft Cover"> </img>
+			<br>
+			<h2 class="center"> <strong> The Shawshank Redemption </strong> </h2>
+			<p> <strong> <em> The Shawshank Redemption </strong> </em> follows the story of Andy Dufresne, a successful banker who is wrongfully convicted of murdering his wife and her lover, 
+			and sentenced to life at Shawshank State Penitentiary. Inside the prison, he befriends Ellis "Red" Redding, learns to navigate the harsh realities of prison life, 
+			and earns the respect of fellow inmates through his intelligence and resourcefulness. Over the years, Andy brings hope and change to the prison community, 
+			all while quietly planning a daring escape that will ultimately lead to his freedom and redemption. The film explores themes of hope, friendship, perseverance, 
+			and the resilience of the human spirit. 
+			</p>
+
+
+			<hr>
+			<h2 class="center"> Reviews </h2>
+			<br>
+			<h3 class="center"> <strong> Average Rating: </strong> 7/10 </h3>
+			
+			<div class="main_content">
+			
+				<div class="right_content">
+				
+				<img id="your_review_pic" src="" alt=""> </img>
+				<p id="your_review"> </p>
+				
+				
+				
+					<img src="../images/logo.png" alt="user_A_picture"> </img> 
+					<p> <strong> UserA (10/10) [Drama Enthusiast, Hopeful Story Seeker, Classic Film Fan] </strong><br> 
+					The Shawshank Redemption is an absolute masterpiece that perfectly balances heartbreak and hope. The story of Andy and Red is compelling, emotionally resonant, 
+					and brilliantly acted. The themes of friendship, perseverance, and redemption shine through every scene. It’s a film that stays with you long after the credits roll, 
+					earning a full 10/10 in my book. 
+					</p>
+
+					<br>
+					
+					<img src="../images/logo.png"alt="user_B_picture"> </img>
+
+					<p> <strong> UserB (9/10) [Prison Drama Lover, Story-Driven Movie Fan, Thoughtful Viewer] </strong><br> 
+					This film tells a deeply moving and inspiring story of survival and resilience. Andy’s cleverness and quiet determination, paired with Red’s reflective narration, 
+					make the journey unforgettable. While some parts are slow-paced, the emotional payoff and brilliant character arcs make it more than worth watching — a solid 9/10. 
+					</p>
+
+					<br>
+					
+					<img src="../images/logo.png"alt="user_C_picture"> </img>
+					<p> <strong> UserC (10/10) [Cinematic Storyteller, Emotional Journey Fan, Classic Movie Buff] </strong><br> 
+					A profoundly moving film about hope, freedom, and the human spirit. Tim Robbins and Morgan Freeman deliver extraordinary performances that elevate every scene. 
+					The storytelling is flawless, the pacing perfect, and the ending deeply satisfying. The Shawshank Redemption is timeless cinema, earning a perfect 10/10. 
+					</p>
+
+					
+
+
+				</div>
+				
+				<div class="left_content">
+					<form id="ratingForm" aria-labelledby="ratingTitle" autocomplete="off">
+						<h2 id="ratingTitle">Leave a Rating & Review</h2>
+
+						<div>
+						  <label for="score">Score (1–10)</label>
+						  
+						  <select id="score" name="score" required>
+							<option value="" disabled selected>Select a score</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						  </select>
+						</div>
+						<br>
+						<div>
+						  <label for="review">Your review</label> <br>
+						  <textarea id="review" name="review" rows="6" cols="40" placeholder="Write your review..." required></textarea>
+						</div>
+
+						<div>
+						  <label>Your viewing background (select all that apply):</label>
+							<div>
+							  <input type="checkbox" id="drama_lover" name="background" value="Drama Enthusiast">
+							  <label for="drama_lover">Drama Enthusiast</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="classic_fan" name="background" value="Classic Film Fan">
+							  <label for="classic_fan">Classic Film Fan</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="hopeful_viewer" name="background" value="Hopeful Story Seeker">
+							  <label for="hopeful_viewer">Hopeful Story Seeker</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="prison_drama_lover" name="background" value="Prison Drama Lover">
+							  <label for="prison_drama_lover">Prison Drama Lover</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="story_driven" name="background" value="Story-Driven Movie Fan">
+							  <label for="story_driven">Story-Driven Movie Fan</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="emotional_journey" name="background" value="Emotional Journey Fan">
+							  <label for="emotional_journey">Emotional Journey Fan</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="cinematic_storyteller" name="background" value="Cinematic Storyteller">
+							  <label for="cinematic_storyteller">Cinematic Storyteller</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="thoughtful_viewer" name="background" value="Thoughtful Viewer">
+							  <label for="thoughtful_viewer">Thoughtful Viewer</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="classic_movie_buff" name="background" value="Classic Movie Buff">
+							  <label for="classic_movie_buff">Classic Movie Buff</label>
+							</div>
+
+
+
+						<div>
+						  <button type="button" id="submitReview" onclick="submit_review()"" onclick="submit_review()">
+							Submit Review
+						  </button>
+						</div>
+					  </form>
+				
+				</div>
+			
+			</div>
+			
+		</div>
+		
+		
+		
+		<script src="../js/review.js" defer></script>
+		</body>
+</html>

@@ -1,0 +1,183 @@
+<!--
+Name: Mathew Boullier
+Date: 9/21/25
+Description: This is a rough draft for the home page for my site.
+ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head> 
+		<title> TrueTake </title>
+		<!--Link our stylesheets-->
+		<link href="../css/main.css" type="text/css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0VNHKGHFS"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-J0VNHKGHFS');
+		</script>
+	</head>
+	
+	<!-- Make a more interesting background color (CHOCOLATE!!!) -->
+	<body>
+		
+		<!-- This creates the 'top navigation bar' -->
+		<div class="header">
+			<a href="../home_page.html"> <img src="../images/logo.png" alt="TrueTake Home" width="128" height="128"> </a>  
+		
+			<div class="header_2">
+				<a href="../about_page.html"> About </a>
+				<a href="../movie_genre_page.html"> Movies </a>
+				<a href="../show_genre_page.html"> Shows </a> 
+				<a href="../game_genre_page.html">  Video Games </a>
+				<a href="#"> [Search] </a>
+			</div>
+		</div>
+	
+		<div id="page_content">
+			<img src="https://upload.wikimedia.org/wikipedia/en/b/b0/It_1990_Promotional_Poster.JPG" height="600" width="300" class="center-img" alt="Game: World of Warcaft Cover"> </img>
+			<br>
+			<h2 class="center"> <strong> It (1990) </strong> </h2>
+			<p> <strong> <em> It (1990) </strong> </em> is a horror television miniseries based on Stephen King's 1986 novel of the same name. 
+				Set in the small town of Derry, Maine, the story follows a group of children who are terrorized by a malevolent, shape-shifting entity that primarily appears as Pennywise the Dancing Clown. 
+				The children, who call themselves the Losers’ Club, band together to confront their deepest fears and uncover the dark secrets lurking beneath their seemingly quiet town. 
+				Decades later, the creature resurfaces, forcing the now-adult members of the group to face it again and confront both the horrors of their past and the evil that continues to haunt Derry. 
+				It (1990) is widely recognized for its chilling atmosphere, iconic villain, and exploration of childhood trauma, friendship, and courage in the face of unimaginable fear.
+			</p>
+
+			<hr>
+			<h2 class="center"> Reviews </h2>
+			<br>
+			<h3 class="center"> <strong> Average Rating: </strong> 7/10 </h3>
+			
+			<div class="main_content">
+			
+				<div class="right_content">
+				
+				<img id="your_review_pic" src="" alt=""> </img>
+				<p id="your_review"> </p>
+				
+				
+				
+				<img src="../images/logo.png" alt="user_A_picture"> </img> 
+				<p> <strong> UserA (9/10) [Horror Fan, Classic TV Lover, Stephen King Enthusiast] </strong><br> 
+				As a longtime horror fan, I can confidently say that It (1990) is a chilling classic that still holds up decades later. 
+				The story of Pennywise and the Losers’ Club perfectly blends suspense, childhood fears, and small-town dread. Tim Curry’s performance as Pennywise is iconic and terrifying, 
+				making every scene with him unforgettable. While some of the special effects are dated, the storytelling and atmosphere more than make up for it. 
+				It (1990) earns a solid 9/10 for its unforgettable characters and enduring scares. 
+				</p>
+
+				<br>
+
+				<img src="../images/logo.png" alt="user_B_picture"> </img>
+				<p> <strong> UserB (7/10) [TV Miniseries Watcher, Horror Newcomer, Suspense Lover] </strong><br> 
+				Watching It (1990) for the first time, I can see why it’s considered a horror classic. The tension builds slowly but effectively, and the interactions between the Losers’ Club 
+				feel genuine and heartfelt. That said, some of the pacing drags in the middle, and the effects can feel cheesy to modern viewers. Despite that, Pennywise is genuinely scary, 
+				and the story’s themes of friendship and facing fears resonate well. Overall, I’d give it a 7/10 — scary, memorable, and emotionally engaging, though a bit dated. 
+				</p>
+
+				<br>
+
+				<img src="../images/logo.png" alt="user_C_picture"> </img>
+				<p> <strong> UserC (8/10) [Stephen King Fan, Nostalgic Viewer, Horror Buff] </strong><br> 
+				It (1990) is a fantastic adaptation of Stephen King’s novel, capturing both the horror and the heart of the story. Tim Curry’s Pennywise is endlessly creepy, and the children’s performances are 
+				genuinely relatable. Some of the special effects show their age, but that actually adds a certain charm. It’s a gripping mix of suspense, nostalgia, and coming-of-age drama that makes it a 
+				must-watch for horror fans. I’d rate it 8/10. 
+				</p>
+
+				</div>
+				
+				<div class="left_content">
+					<form id="ratingForm" aria-labelledby="ratingTitle" autocomplete="off">
+						<h2 id="ratingTitle">Leave a Rating & Review</h2>
+
+						<div>
+						  <label for="score">Score (1–10)</label>
+						  
+						  <select id="score" name="score" required>
+							<option value="" disabled selected>Select a score</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						  </select>
+						</div>
+						<br>
+						<div>
+						  <label for="review">Your review</label> <br>
+						  <textarea id="review" name="review" rows="6" cols="40" placeholder="Write your review..." required></textarea>
+						</div>
+
+						<div>
+						  <label>Your viewing background (select all that apply):</label>
+							<div>
+							  <input type="checkbox" id="horror_fan" name="background" value="Horror Fan">
+							  <label for="horror_fan">Horror Fan</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="classic_tv_lover" name="background" value="Classic TV Lover">
+							  <label for="classic_tv_lover">Classic TV Lover</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="stephen_king_enthusiast" name="background" value="Stephen King Enthusiast">
+							  <label for="stephen_king_enthusiast">Stephen King Enthusiast</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="suspense_lover" name="background" value="Suspense Lover">
+							  <label for="suspense_lover">Suspense Lover</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="nostalgic_viewer" name="background" value="Nostalgic Viewer">
+							  <label for="nostalgic_viewer">Nostalgic Viewer</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="tv_miniseries_watcher" name="background" value="TV Miniseries Watcher">
+							  <label for="tv_miniseries_watcher">TV Miniseries Watcher</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="emotional_story_fan" name="background" value="Emotional Story Fan">
+							  <label for="emotional_story_fan">Emotional Story Fan</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="creepy_clown_fan" name="background" value="Creepy Clown Fan">
+							  <label for="creepy_clown_fan">Creepy Clown Fan</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="coming_of_age_fan" name="background" value="Coming-of-Age Fan">
+							  <label for="coming_of_age_fan">Coming-of-Age Fan</label>
+							</div>
+
+						</div>
+
+
+						<div>
+						  <button type="button" id="submitReview" onclick="submit_review()"" onclick="submit_review()">
+							Submit Review
+						  </button>
+						</div>
+					  </form>
+				
+				</div>
+			
+			</div>
+			
+		</div>
+		
+		
+		
+		<script src="../js/review.js" defer></script>
+		</body>
+</html>

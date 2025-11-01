@@ -1,0 +1,189 @@
+<!--
+Name: Mathew Boullier
+Date: 9/21/25
+Description: This is a rough draft for the home page for my site.
+ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head> 
+		<title> TrueTake </title>
+		<!--Link our stylesheets-->
+		<link href="../css/main.css" type="text/css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0VNHKGHFS"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-J0VNHKGHFS');
+		</script>
+	</head>
+	
+	<!-- Make a more interesting background color (CHOCOLATE!!!) -->
+	<body>
+		
+		<!-- This creates the 'top navigation bar' -->
+		<div class="header">
+			<a href="../home_page.html"> <img src="../images/logo.png" alt="TrueTake Home" width="128" height="128"> </a>  
+		
+			<div class="header_2">
+				<a href="../about_page.html"> About </a>
+				<a href="../movie_genre_page.html"> Movies </a>
+				<a href="../show_genre_page.html"> Shows </a> 
+				<a href="../game_genre_page.html">  Video Games </a>
+				<a href="#"> [Search] </a>
+			</div>
+		</div>
+	
+		<div id="page_content">
+			<img src="https://upload.wikimedia.org/wikipedia/en/1/12/Baldur%27s_Gate_3_cover_art.jpg" height="600" width="300" class="center-img" alt="Game: World of Warcaft Cover"> </img>
+			<br>
+			<h2 class="center"> <strong> Baldur's Gate 3 </strong> </h2>
+			<p> <strong> <em> Baldur’s Gate 3 </strong> </em> is a next‑generation role‑playing game developed by Larian Studios, set in the famed Forgotten Realms of the Dungeons & Dragons universe. 
+			You begin the story abducted aboard a nautiloid ship, infected with a parasitic tadpole that threatens to turn you into a mind flayer, while simultaneously awakening strange new powers.  
+			As the corruption grows, you must forge your own path—resist the darkness and try to remove the parasite, or embrace the power it offers and reshape your destiny. 
+			Along the way you’ll gather companions, explore shadow‑cursed forests, the depths of the Underdark, and the sprawling city of Baldur’s Gate itself, all while caught in a brewing conflict between devils, deities and otherworldly threats.  
+			Your choices, alliances and actions leave a lasting mark on the world—this is a tale of survival, power, identity and legacy. 
+			</p>
+
+			<hr>
+			<h2 class="center"> Reviews </h2>
+			<br>
+			<h3 class="center"> <strong> Average Rating: </strong> 7/10 </h3>
+			
+			<div class="main_content">
+			
+				<div class="right_content">
+				
+				<img id="your_review_pic" src="" alt=""> </img>
+				<p id="your_review"> </p>
+				
+				
+				
+			<img src="../images/logo.png" alt="user_A_picture"> </img> 
+			<p> <strong> UserA (10/10) [RPG Fan, Dungeons & Dragons Enthusiast, Strategy Gamer] </strong><br> 
+			Baldur’s Gate 3 is a masterpiece of modern RPG design. The story is immersive, the characters are rich and memorable, 
+			and the combat system brilliantly translates D&D mechanics into a digital format. Every choice feels meaningful, and the freedom to approach problems creatively keeps me coming back. 
+			A perfect 10/10 for any fan of role-playing games. 
+			</p>
+
+			<br>
+
+			<img src="../images/logo.png" alt="user_B_picture"> </img>
+			<p> <strong> UserB (9/10) [Fantasy Lover, Story-Driven Gamer, Tactical Combat Fan] </strong><br> 
+			The game delivers an incredible narrative experience with deep character interactions and high-stakes choices. 
+			Combat can be challenging, and the learning curve is steep for newcomers to D&D mechanics, but the sense of accomplishment and immersion is unmatched. 
+			I’d give it a 9/10 — thrilling, strategic, and unforgettable. 
+			</p>
+
+			<br>
+
+			<img src="../images/logo.png" alt="user_C_picture"> </img>
+			<p> <strong> UserC (10/10) [Adventure Seeker, Party Management Fan, Lore Enthusiast] </strong><br> 
+			Baldur’s Gate 3 offers a sprawling, detailed world full of secrets and dangers. Exploring with companions and uncovering the story is endlessly engaging. 
+			Despite minor bugs or UI quirks, the experience fully captures the magic of the Dungeons & Dragons universe. Absolutely deserving of a 10/10. 
+			</p>
+
+				</div>
+				
+				<div class="left_content">
+					<form id="ratingForm" aria-labelledby="ratingTitle" autocomplete="off">
+						<h2 id="ratingTitle">Leave a Rating & Review</h2>
+
+						<div>
+						  <label for="score">Score (1–10)</label>
+						  
+						  <select id="score" name="score" required>
+							<option value="" disabled selected>Select a score</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						  </select>
+						</div>
+						<br>
+						<div>
+						  <label for="review">Your review</label> <br>
+						  <textarea id="review" name="review" rows="6" cols="40" placeholder="Write your review..." required></textarea>
+						</div>
+
+						<div>
+						  <label>Your gaming background (select all that apply):</label>
+							<div>
+							  <input type="checkbox" id="rpg_fan" name="background" value="RPG Fan">
+							  <label for="rpg_fan">RPG Fan</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="dnd_enthusiast" name="background" value="Dungeons & Dragons Enthusiast">
+							  <label for="dnd_enthusiast">Dungeons & Dragons Enthusiast</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="strategy_gamer" name="background" value="Strategy Gamer">
+							  <label for="strategy_gamer">Strategy Gamer</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="story_driven_gamer" name="background" value="Story-Driven Gamer">
+							  <label for="story_driven_gamer">Story-Driven Gamer</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="fantasy_lover" name="background" value="Fantasy Lover">
+							  <label for="fantasy_lover">Fantasy Lover</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="tactical_combat_fan" name="background" value="Tactical Combat Fan">
+							  <label for="tactical_combat_fan">Tactical Combat Fan</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="tactical_combat_hater" name="background" value="Usually Dislikes Tactical Combat">
+							  <label for="tactical_combat_fan">Usually Dislikes Tactical Combat</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="adventure_seeker" name="background" value="Adventure Seeker">
+							  <label for="adventure_seeker">Adventure Seeker</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="party_management_fan" name="background" value="Party Management Fan">
+							  <label for="party_management_fan">Party Management Fan</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="lore_enthusiast" name="background" value="Lore Enthusiast">
+							  <label for="lore_enthusiast">Lore Enthusiast</label>
+							</div>
+							<div>
+							  <input type="checkbox" id="first_time_rpg" name="background" value="First-Time RPG Player">
+							  <label for="first_time_rpg">First-Time RPG Player</label>
+							</div>
+
+						</div>
+
+
+						<div>
+						  <button type="button" id="submitReview" onclick="submit_review()"" onclick="submit_review()">
+							Submit Review
+						  </button>
+						</div>
+					  </form>
+				
+				</div>
+			
+			</div>
+			
+		</div>
+		
+		
+		
+		<script src="../js/review.js" defer></script>
+		</body>
+</html>
