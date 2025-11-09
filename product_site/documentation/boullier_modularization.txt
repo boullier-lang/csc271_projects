@@ -1,0 +1,12 @@
+1. Currently, no code can be modularized :(. I already took care of this last assignment..
+
+2. :(
+
+3. This assignment, I will focus on making more modular code.
+
+The part of the site I will be focusing on is the genre pages. Each genre image will direct you to a different page with lots of that genre on it.
+I will be making one of the pages (Action); i will create a singular Action.js script that will decide what content to show depending on the header at the top of the page.
+
+I will have a function called getMediaType with no inputs. It's output will be an array of media (movies, games, or shows).
+
+I will have another function called showMedia() which will take an array that is the content to show.

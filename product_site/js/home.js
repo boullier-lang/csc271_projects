@@ -31,7 +31,7 @@ function set_image(src, alt_name, review_link)
 }
 
 //Set our image to our first entry
-set_image("https://upload.wikimedia.org/wikipedia/en/b/b0/It_1990_Promotional_Poster.JPG", "It (1990)", "")
+set_image("https://upload.wikimedia.org/wikipedia/en/b/b0/It_1990_Promotional_Poster.JPG", "It (1990)", "review_pages/review_it-1990.html")
 
 function show_entry()
 {
