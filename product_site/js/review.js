@@ -4,6 +4,7 @@
 //Date: 10/26
 //A simple JS script (that took quite a bit of time!) that displays the user's review.
 //Updated 11/1/2025, to be completely modular
+//Updated 11/16/2025, to incorporate DOM Events
 
 //This function will get other scores, add them together, and return the value
 function get_other_scores()
@@ -85,3 +86,41 @@ function submit_review()
   
   
 }
+
+
+
+
+///Event listeners below
+const reviewField = document.getElementById("review");
+const message = document.getElementById("message");
+const reviewForm = document.getElementById("ratingForm");
+const reviewBtn = document.getElementById("submitReview")
+
+reviewField.addEventListener("focus", function () {
+  message.style.color = "blue";
+  message.textContent = "Please enter a review (at least 10 characters).";
+});
+
+reviewField.addEventListener("blur", function () {
+  const review_msg = reviewField.value.trim();
+
+  if (review_msg.length < 10) {
+    message.style.color = "blue";
+    message.innerHTML = "<strong>Error: Review must be at least 10 characters.</strong>";
+  } else {
+    message.textContent = "";
+  }
+});
+
+reviewBtn.addEventListener("click", function (event) {
+	console.log("HEY!!")
+  const review_msg = reviewField.value.trim();
+
+  if (review_msg.length < 10) {
+    message.style.color = "red";
+    message.textContent = "Error: Review must be at least 10 characters.";
+    return;
+  }
+  message.textContent = "Success! Your review has been recorded.";
+  submit_review();
+});
