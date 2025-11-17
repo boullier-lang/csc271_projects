@@ -1,6 +1,7 @@
 //11/1/2025
 //Name: Mathew Boullier
 //A simple JS script that swaps between different entries, using conditionals
+//Updated 11/16/2025, to use DOM Events instead of HTML Events
 
 var last_changed=0;
 
@@ -81,6 +82,11 @@ function handle_click(direction)
 }
 
 
+leftBtn = document.getElementById('left-btn')
+rightBtn = document.getElementById("right-btn")
+
+leftBtn.addEventListener("click", () => handle_click("left"));
+rightBtn.addEventListener("click", () => handle_click("right"));
 
 
 
