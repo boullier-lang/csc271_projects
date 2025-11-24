@@ -2,23 +2,138 @@
 //Name: Mathew Boullier
 //A simple JS script that swaps between different entries, using conditionals
 //Updated 11/16/2025, to use DOM Events instead of HTML Events
+//Updated 11/23/2025, to use Objects instead of a Map
 
 var last_changed=0;
 
 
-//I've taken a few CSC classes already, so I already know about maps ;)
-//just looked up syntax for it here: https://www.w3schools.com/js/js_maps.asp
-const entries = new Map([
-  ["It (1990)", ["https://upload.wikimedia.org/wikipedia/en/b/b0/It_1990_Promotional_Poster.JPG", "review_pages/review_it-1990.html"]],
-  ["Baldur's Gate 3",["https://upload.wikimedia.org/wikipedia/en/1/12/Baldur%27s_Gate_3_cover_art.jpg", "review_pages/review_bg3.html"] ],
-  ["World of Warcraft", ["images/warcraft_poster.jpg", "review_pages/review_warcraft.html"]],
-  ["Dragonball Z", ["https://m.media-amazon.com/images/M/MV5BN2VlNTdlMzQtYzE5OC00YmYwLTgyZTItYjEzMWY0ZDNjMTJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", "review_pages/review_dbz.html"]],
-  ["Gattaca", ["https://upload.wikimedia.org/wikipedia/en/d/de/Gattaca_poster.jpg", "review_pages/review_gattaca.html"]],
-  ["The Shawshank Redemption", ["https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg", "review_pages/review_shawshank-redemption.html"]]
-]);
+function EntryItem(title, type, url, cover_url, rating, genre) {
+  this.title = title;
+  this.type = type;
+  this.url = url;
+  this.cover_url = cover_url;
+  this.rating = rating;
+  this.genre = genre;
+
+  this.get_url = function() {
+    return this.url;
+  };
+
+  this.get_cover = function() {
+    return this.cover_url;
+  };
+
+  this.get_rating = function() {
+    return this.rating;
+  };
+  
+  this.get_title = function() {
+	return this.title;
+  };
+}
+
+
+const entries = [
+  new EntryItem(
+    "It (1990)",
+    "Horror",
+    "review_pages/review_it-1990.html",
+    "https://upload.wikimedia.org/wikipedia/en/b/b0/It_1990_Promotional_Poster.JPG",
+    8,
+    ""
+  ),
+  new EntryItem(
+    "Baldur's Gate 3",
+    "RPG",
+    "review_pages/review_bg3.html",
+    "https://upload.wikimedia.org/wikipedia/en/1/12/Baldur%27s_Gate_3_cover_art.jpg",
+    9.7,
+    ""
+  ),
+  new EntryItem(
+    "World of Warcraft",
+    "",
+    "review_pages/review_warcraft.html",
+    "images/warcraft_poster.jpg",
+    7,
+    ""
+  ),
+  new EntryItem(
+    "Dragonball Z",
+    "Fighting",
+    "review_pages/review_dbz.html",
+    "https://m.media-amazon.com/images/M/MV5BN2VlNTdlMzQtYzE5OC00YmYwLTgyZTItYjEzMWY0ZDNjMTJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    9,
+    ""
+  ),
+  new EntryItem(
+    "Gattaca",
+    "Sci-Fi",
+    "review_pages/review_gattaca.html",
+    "https://upload.wikimedia.org/wikipedia/en/d/de/Gattaca_poster.jpg",
+    9,
+    ""
+  ),
+  new EntryItem(
+    "The Shawshank Redemption",
+    "Drama",
+    "review_pages/review_shawshank-redemption.html",
+    "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
+    9.7,
+    ""
+  )
+];
+
+
+
+const latest_reviews = [
+  new EntryItem(
+    "Weapons",
+    "",
+    "review_pages/review_weapons.html",
+    "",
+    7.0,
+    ""
+  ),
+  new EntryItem(
+    "Hollow Knight: Silksong",
+    "",
+    "review_pages/review_silksong.html",
+    "",
+    9.5,
+    ""
+  ),
+  new EntryItem(
+    "Superman (2025)",
+    "",
+    "review_pages/review_superman-2025.html",
+    "",
+    8.0,
+    ""
+  ),
+  new EntryItem(
+    "Clair Obscur",
+    "",
+    "review_pages/review_clair-obscur.html",
+    "",
+    10.0,
+    ""
+  ),
+  new EntryItem(
+    "It: Welcome To Derry",
+    "",
+    "review_pages/review_welcome-to-derry.html",
+    "",
+    8.5,
+    ""
+  )
+];
+
 
 const img = document.getElementById("discover-img");
 const alt = document.getElementById("discover-link");
+const rating_txt = document.getElementById("rating_txt");
+const table = document.getElementById("review_table");
 
 index = 0;
 
@@ -32,19 +147,13 @@ function set_image(src, alt_name, review_link)
 }
 
 //Set our image to our first entry
-set_image("https://upload.wikimedia.org/wikipedia/en/b/b0/It_1990_Promotional_Poster.JPG", "It (1990)", "review_pages/review_it-1990.html")
+show_entry()
 
 function show_entry()
 {
-
-//in order to get our entry name,
-//i followed this documentation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
-entry_names = Array.from(entries.keys())
-our_entry = entries.get(entry_names[index])
-
-set_image(our_entry[0], entry_names[index], our_entry[1])
-
-
+	current_entry = entries[index];
+	set_image(current_entry.get_cover(), current_entry.get_title(), current_entry.get_url());
+	rating_txt.textContent = current_entry.get_rating() + " / 10";
 
 }
 
@@ -79,6 +188,16 @@ function handle_click(direction)
 	}
 
 
+}
+
+function add_entry_to_table(entry_to_add)
+{
+	piece_1 = "<tr> <td> <em> " + entry_to_add.get_title() + " </em> </td>"
+	piece_2 = "<td> " + entry_to_add.get_rating() + " / 10 </td>"
+	piece_3 = "<td> No links yet :)! </td>"
+	
+	table.innerHTML += (piece_1 + piece_2 + piece_3)
+	
 }
 
 
@@ -118,3 +237,12 @@ async function swap_movies()
 }
 
 swap_movies();
+
+
+
+for (const item of latest_reviews) {
+  add_entry_to_table(item)
+}
+
+
+
