@@ -38,7 +38,7 @@ const entries = [
     "It (1990)",
     "Horror",
     "review_pages/review_it-1990.html",
-    "https://upload.wikimedia.org/wikipedia/en/b/b0/It_1990_Promotional_Poster.JPG",
+    "images/poster_it.jpeg",
     8,
     ""
   ),
@@ -46,7 +46,7 @@ const entries = [
     "Baldur's Gate 3",
     "RPG",
     "review_pages/review_bg3.html",
-    "https://upload.wikimedia.org/wikipedia/en/1/12/Baldur%27s_Gate_3_cover_art.jpg",
+    "images/poster_bg3.jpeg",
     9.7,
     ""
   ),
@@ -54,7 +54,7 @@ const entries = [
     "World of Warcraft",
     "",
     "review_pages/review_warcraft.html",
-    "images/warcraft_poster.jpg",
+    "images/poster_warcraft.jpeg",
     7,
     ""
   ),
@@ -62,7 +62,7 @@ const entries = [
     "Dragonball Z",
     "Fighting",
     "review_pages/review_dbz.html",
-    "https://m.media-amazon.com/images/M/MV5BN2VlNTdlMzQtYzE5OC00YmYwLTgyZTItYjEzMWY0ZDNjMTJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "images/poster_dbz.jpeg",
     9,
     ""
   ),
@@ -70,7 +70,7 @@ const entries = [
     "Gattaca",
     "Sci-Fi",
     "review_pages/review_gattaca.html",
-    "https://upload.wikimedia.org/wikipedia/en/d/de/Gattaca_poster.jpg",
+    "images/poster_gattaca.jpeg",
     9,
     ""
   ),
@@ -78,7 +78,7 @@ const entries = [
     "The Shawshank Redemption",
     "Drama",
     "review_pages/review_shawshank-redemption.html",
-    "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
+    "images/poster_shawshank.jpeg",
     9.7,
     ""
   )
@@ -151,10 +151,25 @@ show_entry()
 
 function show_entry()
 {
-	current_entry = entries[index];
-	set_image(current_entry.get_cover(), current_entry.get_title(), current_entry.get_url());
-	rating_txt.textContent = current_entry.get_rating() + " / 10";
 
+  const current_entry = entries[index];
+
+  // Fade out
+  img.classList.remove("visible");
+
+  // Wait for fade-out to finish
+  setTimeout(() => {
+    set_image(
+      current_entry.get_cover(),
+      current_entry.get_title(),
+      current_entry.get_url()
+    );
+
+    // Fade in
+    img.classList.add("visible");
+
+    rating_txt.textContent = current_entry.get_rating() + " / 10";
+  }, 300);
 }
 
 
@@ -164,7 +179,7 @@ function handle_click(direction)
 	{
 		if(index - 1 == -1)
 		{
-			index = entries.size - 1;
+			index = entries.length - 1;
 		}
 		else
 		{
@@ -175,14 +190,7 @@ function handle_click(direction)
 	}
 	else
 	{
-		if(index+1 == entries.size)
-		{
-			index=0;
-		}
-		else
-		{
-			index+=1;
-		}
+		index = (index+1)%entries.length
 		show_entry();
 
 	}
@@ -192,11 +200,11 @@ function handle_click(direction)
 
 function add_entry_to_table(entry_to_add)
 {
-	piece_1 = "<tr> <td> <em> " + entry_to_add.get_title() + " </em> </td>"
+	piece_1 = "<tr> <td> <em> <a href='" +entry_to_add.get_url() + "'>" + entry_to_add.get_title() + " </a> </em> </td>"
 	piece_2 = "<td> " + entry_to_add.get_rating() + " / 10 </td>"
-	piece_3 = "<td> No links yet :)! </td>"
+
 	
-	table.innerHTML += (piece_1 + piece_2 + piece_3)
+	table.innerHTML += (piece_1 + piece_2)
 	
 }
 

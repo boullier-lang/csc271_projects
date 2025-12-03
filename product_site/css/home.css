@@ -20,9 +20,22 @@ table{
 }
 
 
-
+/* GOTTA DRESS TO IMPRESS
+https://www.w3schools.com/css/css3_transitions.asp
+*/
 #discover-img {
   display: inline-block;
   margin: 0;
   padding: 0;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.69s ease;
+}
+
+#discover-img.visible {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  transform: scale(1);
 }
