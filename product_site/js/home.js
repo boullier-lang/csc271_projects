@@ -92,7 +92,7 @@ const latest_reviews = [
     "",
     "review_pages/review_weapons.html",
     "",
-    7.0,
+    9.0,
     ""
   ),
   new EntryItem(
@@ -100,21 +100,21 @@ const latest_reviews = [
     "",
     "review_pages/review_silksong.html",
     "",
-    9.5,
+    9.3,
     ""
   ),
   new EntryItem(
     "Superman (2025)",
     "",
-    "review_pages/review_superman-2025.html",
+    "review_pages/review_superman.html",
     "",
-    8.0,
+    7.0,
     ""
   ),
   new EntryItem(
     "Clair Obscur",
     "",
-    "review_pages/review_clair-obscur.html",
+    "review_pages/review_clair.html",
     "",
     10.0,
     ""
@@ -122,9 +122,9 @@ const latest_reviews = [
   new EntryItem(
     "It: Welcome To Derry",
     "",
-    "review_pages/review_welcome-to-derry.html",
+    "review_pages/review_derry.html",
     "",
-    8.5,
+    8.7,
     ""
   )
 ];
