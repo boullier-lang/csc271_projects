@@ -11,6 +11,11 @@ body{
 	background: linear-gradient(90deg, rgba(240, 165, 60, 1) 0%, rgba(181, 36, 16, 1) 50%, rgba(231, 245, 34, 1) 100%);
 	font-family: Verdana, Arial;
 }
+h1, h2, h3, p, a {
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.85));
+}
+
+
 
 .center{
 	  text-align: center;
@@ -28,36 +33,36 @@ hr{
 	border-color:#a339fa;
 }
 
-/* Default link */
 a {
-  color: #ffeb8a;
-  text-decoration: none;
+  color: #e8f0ff; /* very light cool blue for contrast */
   font-weight: bold;
-  text-shadow: 0 0 3px rgba(0,0,0,0.4);
-}
-
-/* Visited link */
-a:visited {
-  color: #ffd1a9; 
   text-decoration: none;
+  text-shadow: 0 0 4px rgba(0,0,0,0.55);
 }
 
-/* Hover link */
+/* Visited */
+a:visited {
+  color: #c9d6ff; /* slightly darker cool shade */
+}
+
+/* Hover */
 a:hover {
   color: #ffffff;
   text-decoration: underline;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
 }
 
-/* Active link */
+/* Active */
+a:active,
 a.active {
-  color: #ffd24c; 
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  color: #b4c8ff;
 }
 
+/* HEADINGS — high contrast, clean cool tones */
 h1, h2, h3 {
-  color: #fff3b0; 
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  font-family: "Verdana", Arial, sans-serif;
+  color: #d6e9ff; /* pale bluish-white for readability */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.55);
+  font-family: Verdana, Arial, sans-serif;
 }
 
 
