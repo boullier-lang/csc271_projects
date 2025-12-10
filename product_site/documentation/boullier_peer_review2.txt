@@ -1,0 +1,17 @@
+1. From the feedback, it seems that everyone understood the purpose of my product.
+2. They also seemed to understand the audience that site was intended for.
+
+3. My peers seemed to found my planning and design elements effective (no feedback).
+4. For the most part, my peers found my structure and navigation of the site to be effective. 
+
+5. Reviewers often said that they liked the looping of the 'Trending' titles and the overall interactivity of the site.
+6. They did not identify any issues in terms of responsiveness.
+7. The most common complaint was that the contrast for some of the text was difficult on the eyes.
+
+8. Overall, people rated my overall site as 'good' to 'excellent'.
+9. Everybody had clashing opinions on the strongest part of the site, though there was more than one person that said 'functionality'. I think that aspect stood out due to the dynamic review pages, the cycling titles, etc.
+10. For the most part, almost everybody suggested to improve the contrast of text or change the background color. The only other suggestion was more content in the 'genres' pages.
+
+11. 
+	For my first improvement, I will be fixing the contrast. I had already fixed this previously by making the of the text more vibrant and adding a shadow to the back, but since people are still complaining about this I will be turning the color of the text to be cooler (a light blue), and adding a drop-shadow on top of the shadow to the back of the text. The background color of the site is completely intentional and is meant to grab the user's attention, so I will not be changing it. Some people also suggested adding boxes to the back of the text; while this would work, I find it inelegant and it ruins the aesthetic of the site, which is something I'm trying to preserve. The drop-shadow in the back should add enough to mimic the effects of a box without resorting to it.
+	For my second improvement, I will be adding more to the genre pages and will also add more review pages to browse through. I do not have enough time to implement anything more complex unfortunately (thanks to exams D:).
